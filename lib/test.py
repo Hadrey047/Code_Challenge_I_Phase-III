@@ -5,12 +5,12 @@ from review import Review
 from restaurant import Restaurant
 
 # Creating Instances for restaurant  and review
-restaurant1 = Restaurant("Gray's BBQ")
-restaurant2 = Restaurant("Iya Bashira" )
+restaurant1 = Restaurant("Royal Cubanna")
+restaurant2 = Restaurant("Pinnacle Cool Spot")
 
-review1 = Review("Customer daniel", " Gray's BBQ", 2)
-review2 = Review("Customer samuel", "Iya Bashira", 4)
-review3 = Review("Customer damola", "Esther Restaurant", 7)
+review1 = Review("Customer John", " Royal Cubanna", 2)
+review2 = Review("Customer Dami", "Pinnacle Cool Spot", 4)
+review3 = Review("Customer Bola", "Louge Restaurant", 7)
 
 
 # Test the methods of the Restaurant class
@@ -25,8 +25,8 @@ print(restaurant2.customers())
 print(restaurant2.average_star_rating())
 
 # Creating instances for Customer
-customer1 = Customer("mary", "oladele")
-customer2 = Customer("owen", "onye")
+customer1 = Customer("Tolu", "Oladiti")
+customer2 = Customer("Gbenga", "Ogunsade")
 
 # Creating instances for Review
 review1 = Review(customer1, "LongMan treehouse ", 1)
@@ -72,4 +72,4 @@ print("All Reviews:")
 
 for review in all_reviews:
     if isinstance(review.customer, Customer):
-        print("Customer:", review.customer.full_name(), "| Restaurant:", review.restaurant, "| Rating:", review.rating)
+        print("Customer:", review.customer.full_name(), "| Restaurant:", review.restaurant, "| Rating:",review.rating)
