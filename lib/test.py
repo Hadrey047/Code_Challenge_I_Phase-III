@@ -29,12 +29,12 @@ customer1 = Customer("Tolu", "Oladiti")
 customer2 = Customer("Gbenga", "Ogunsade")
 
 # Creating instances for Review
-review1 = Review(customer1, "LongMan treehouse ", 1)
-review2 = Review(customer2, " Yahuza's Fresh Grill", 5)
+review1 = Review(customer1, "Threshing House", 1)
+review2 = Review(customer2, " Baba Loja", 5)
 
 # Add reviews for customers
-customer1.add_review("Nike Tropical ", 3)
-customer2.add_review("Capri Restaurant ", 2)
+customer1.add_review("Bank Capricon ", 3)
+customer2.add_review("Fish Restaurant ", 2)
 
 # Get all customers
 all_customers = Customer.all()
